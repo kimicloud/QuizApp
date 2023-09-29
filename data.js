@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
     {
         question: "What is the capital of France?",
         options: ["London", "Delhi", "Berlin", "Paris"],
@@ -26,29 +26,28 @@ const questions = [
     },
     {
         question: 'Which element is represented by the chemical symbol "H"?',
-        options: ["a) Carbon", "b) Helium", "c) Oxygen", "d) Hydrogen"],
+        options: ["Carbon", "Helium", "Oxygen", "Hydrogen"],
         correctAnswer: 3
     },
     {
         question: "What is the currency of Thailand?",
-        options: ["a) Baht", "b) Won", " c) Yen", "d) Dollar"],
+        options: ["Baht", "Won", " Yen", "Dollar"],
         correctAnswer: 0
     },
     {
         question: "Who was the first president of India?",
-        options: ["a) Jawaharlal Nehru", "b) Subhash Chandra bose", "c) Rajendra Prasad", "d) Pratibha Patil"],
+        options: ["Jawaharlal Nehru", "Subhash Chandra bose", "Rajendra Prasad", "Pratibha Patil"],
         correctAnswer: 2
     },
     {
         question: "What is the largest mammal in the world?",
-        options: ["a) Shark", "b) Blue whale", "c) Seal", "d) Elephant"],
+        options: ["Shark", "Blue whale", "Seal", "Elephant"],
         correctAnswer: 1
     },
     {
         question: "In which year did India gain independence from British rule?",
-        options: ["a) 1949", "b) 1943", "c) 1945", "d) 1947"],
+        options: ["1949", "1943", "1945", "1947"],
         correctAnswer: 3
     }
 ];
 
-export default questions;

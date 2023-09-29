@@ -1,4 +1,4 @@
-import questions  from "./data";
+import {questions}  from "./data.js";
 
 
 
@@ -30,15 +30,19 @@ function showQuestion() {
         quizContainer.innerHTML = `
 
             <h2 class="text-lg font-bold mb-4">${question.question}</h2>
-            <div>
+            <div class="text-xl ">
                 ${question.options.map((option, index) => `
                     <label class="block mb-2">
-                        <input type="radio" name="answer" value="${index}">
+                        <input 
+                        type="radio" 
+                        name="answer" 
+                        value="${index}"
+                        >
                         ${option}
                     </label>
                 `).join('')}
             </div>
-            <button id="next-btn" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Next</button>
+            <button id="next-btn" class="bg-blue-500 text-white text-center text-lg px-6 rounded-md py-2 mt-4">Next</button>
         `;
 
         document.getElementById('next-btn').addEventListener('click', checkAnswer);

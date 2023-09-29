@@ -6,28 +6,34 @@
     <title>Quiz Game</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+
     </style>
 </head>
-<body class="bg-gray-100 p-8">
+<body class="bg-gray-100">
 
-    <div class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md">
-        <h1 class="text-2xl font-bold mb-6">Quiz Game</h1>
+    <nav class="flex bg-blue-500 justify-between items-center p-8 mb-8 text-white
+   ">
+        <a href="/" class=" hover:text-blue-100 ">Home</a>
+        <a href="/about" class=" hover:text-blue-100">About</a>
+
+    </nav>
+
+    <div class="container mx-auto bg-white p-8 rounded-md shadow-md mt-20 text-justify">
+        <h1 class="text-4xl font-bold mb-6 text-center">Quiz Game</h1>
         
         <div id="quiz-container">
             <!-- Questions will be dynamically populated here -->
         </div>
 
         <div id="result-container" class="hidden">
-            <h2 class="text-lg font-bold mb-4">Your Result</h2>
-            <p id="score-message" class="mb-4"></p>
+            <h2 class="text-lg font-bold my-4">Your Result</h2>
+            <p id="score-message" class="my-4"></p>
             <button id="restart-btn" class="bg-blue-500 text-white px-4 py-2 rounded-md">Restart Quiz</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+    <!-- <script type="module" src="data.js"></script> -->
 
 </body>
 </html>
