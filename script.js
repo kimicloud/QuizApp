@@ -42,7 +42,8 @@ function showQuestion() {
                     </label>
                 `).join('')}
             </div>
-            <button id="next-btn" class="bg-blue-500 text-white text-center text-lg px-6 rounded-md py-2 mt-4">Next</button>
+            <button id="next-btn" class="bg-blue-500 text-white text-center text-lg px-6 rounded-md py-2 mt-4
+            hover:bg-black transform duration-500">Next</button>
         `;
 
         document.getElementById('next-btn').addEventListener('click', checkAnswer);
