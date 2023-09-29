@@ -1,8 +1,4 @@
-const questions = [
-    { question: "Question 1", options: ["Option A", "Option B", "Option C", "Option D"], correctAnswer: 0 },
-    { question: "Question 2", options: ["Option A", "Option B", "Option C", "Option D"], correctAnswer: 1 },
-   // { question: "Question 10", options: ["Option A", "Option B", "Option C", "Option D"], correctAnswer: 1 }
-];
+import questions  from "./data";
 
 
 
